@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1024px){
+	header.site-header .cww-menu-outer-wrapp{
+		padding: 75px;
+	}
+	header.site-header .inner-iemnu-wrapp.cww-flex{
+		justify-content: space-between;
+	}
+}
+@media only screen and (max-width: 768px){
+	.cww-nav-container ul li{
+		border: none;
+	}
+	.main-navigation a{
+		padding: inherit;
+	}
+	header.site-header{
+		position: absolute;
+	}
+	header.site-header .menu-text-wrapp{
+		width: 35%;
+	}
+	header.site-header .close-icon{
+		margin: auto;
+		float: none
+	}
+}
+
+@media only screen and (max-width: 500px){
+	header.site-header .main-navigation,
+	header.site-header .menu-text-wrapp{
+		width: 100% !important;
+	}
+}

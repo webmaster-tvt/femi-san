@@ -1,0 +1,228 @@
+/*
+Theme Name: Parallax Portfolio
+Theme URI: https://codeworkweb.com/wordpress-themes/parallax-portfolio
+Template: cww-portfolio
+Text Domain: parallax-portfolio
+Author: Code Work Web
+Author URI: https://codeworkweb.com/
+Description: This is child theme of CWW Portfolio.This theme is designed for personal portfolio with stunning parallax effects to catch the attension of your visitors .Get free support at https://codeworkweb.com/contact/  and Check demo at https://demo.codeworkweb.com/cww-portfolio/
+Tags: custom-background,custom-logo,custom-menu,featured-images,threaded-comments,translation-ready
+Version: 1.0.0
+Tested up to: 6.0
+Requires PHP: 5.6
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+CWW Portfolio is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+
+*/
+body{
+    overflow-x: hidden;
+}
+button.button.is-text {
+    background: transparent;
+    border: none;
+}
+header.site-header{
+    box-shadow: none;
+}
+header.site-header .burger {
+    width: 28px;
+    height: 100%;
+    position: relative;
+    margin-left: 10px;
+}
+
+header.site-header svg {
+    vertical-align: middle;
+}
+header.site-header .open-event{
+    cursor: pointer;
+    display: flex;
+}
+header.site-header .open-event:hover .icon-burger{
+    transition: all 0.4s;
+}
+header.site-header .open-event:hover .icon-burger{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+header.site-header  .cww-menu-outer-wrapp.visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0,0) rotate(0) scale(1);
+    -ms-transform: translate(0,0) rotate(0) scale(1);
+    transform: translate(0,0) rotate(0) scale(1);
+    -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    -webkit-transition: visibility 1s cubic-bezier(.575,.015,0,.995),opacity 1s cubic-bezier(.575,.015,0,.995),-webkit-clip-path 1s cubic-bezier(.575,.015,0,.995),-webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: visibility 1s cubic-bezier(.575,.015,0,.995),opacity 1s cubic-bezier(.575,.015,0,.995),-webkit-clip-path 1s cubic-bezier(.575,.015,0,.995),-webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: clip-path 1s cubic-bezier(.575,.015,0,.995),visibility 1s cubic-bezier(.575,.015,0,.995),opacity 1s cubic-bezier(.575,.015,0,.995),transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: clip-path 1s cubic-bezier(.575,.015,0,.995),visibility 1s cubic-bezier(.575,.015,0,.995),opacity 1s cubic-bezier(.575,.015,0,.995),transform 1s cubic-bezier(.575,.015,0,.995),-webkit-clip-path 1s cubic-bezier(.575,.015,0,.995),-webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+}
+header.site-header  .cww-menu-outer-wrapp {
+    padding: 120px;
+    background: #0D0E13;
+    background-color: #0D0E13;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header.site-header .close-icon {
+    display: flex;
+    float: right;
+    width: auto;
+    color: #fff;
+    
+}
+header.site-header .close-wrapp {
+    display: flex;
+    justify-content: end;
+}
+header.site-header .close-icon:after {
+    content: "";
+    clear: both;
+}
+header.site-header .close-icon:hover{
+    cursor: pointer;
+}
+header.site-header .close-icon svg.icon-close{
+    transition: all 0.4s;
+}
+header.site-header .close-icon:hover svg.icon-close{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+header.site-header  .cww-menu-outer-wrapp {
+    position: fixed;
+    overscroll-behavior-y: contain;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    background-color: #0d0e13;
+    -webkit-clip-path: polygon(0 0,100% 0,130% 0,0 0);
+    clip-path: polygon(0 0,100% 0,130% 0,0 0);
+    -webkit-transform: translate(0,0) rotate(7deg) scale(1.3);
+    -ms-transform: translate(0,0) rotate(7deg) scale(1.3);
+    transform: translate(0,0) rotate(7deg) scale(1.3);
+    -webkit-transition: visibility 1s cubic-bezier(.575,.015,0,.995),-webkit-clip-path 1s cubic-bezier(.575,.015,0,.995),-webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: visibility 1s cubic-bezier(.575,.015,0,.995),-webkit-clip-path 1s cubic-bezier(.575,.015,0,.995),-webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: clip-path 1s cubic-bezier(.575,.015,0,.995),visibility 1s cubic-bezier(.575,.015,0,.995),transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: clip-path 1s cubic-bezier(.575,.015,0,.995),visibility 1s cubic-bezier(.575,.015,0,.995),transform 1s cubic-bezier(.575,.015,0,.995),-webkit-clip-path 1s cubic-bezier(.575,.015,0,.995),-webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+}
+
+
+.menu-opened .cww-site-content {
+    -webkit-transform-origin: 25vw 0;
+    -ms-transform-origin: 25vw 0;
+    transform-origin: 25vw 0;
+    -webkit-transform: translate(0,50vh) rotate(7deg) scale(1.3,1.3);
+    -ms-transform: translate(0,50vh) rotate(7deg) scale(1.3,1.3);
+    transform: translate(0,50vh) rotate(7deg) scale(1.3,1.3);
+    -webkit-transition: -webkit-transform 1.2s cubic-bezier(.575,.015,0,.995);
+    transition: -webkit-transform 1.2s cubic-bezier(.575,.015,0,.995);
+    transition: transform 1.2s cubic-bezier(.575,.015,0,.995);
+    transition: transform 1.2s cubic-bezier(.575,.015,0,.995),-webkit-transform 1.2s cubic-bezier(.575,.015,0,.995);
+}
+.cww-site-content {
+    -webkit-transform-origin: 25vw 0;
+    -ms-transform-origin: 25vw 0;
+    transform-origin: 25vw 0;
+    will-change: transform;
+    -webkit-transform: translateZ(0) rotate(0) scale(1,1);
+    transform: translateZ(0) rotate(0) scale(1,1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: -webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: transform 1s cubic-bezier(.575,.015,0,.995);
+    transition: transform 1s cubic-bezier(.575,.015,0,.995),-webkit-transform 1s cubic-bezier(.575,.015,0,.995);
+}
+
+header.site-header .cww-nav-container ul li{
+    display: block;
+}
+header.site-header .main-navigation a{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: left;
+}
+header.site-header .main-navigation a:hover{
+    color:var(--theme-color);
+}
+header.site-header .main-navigation ul ul{
+    background: transparent;
+    float: none;
+    position: unset;
+    box-shadow: none;
+    padding: 0;
+    text-align: inherit;
+}
+header.site-header .main-navigation .sub-menu li:not(:last-child) {
+    border: none;
+}
+header.site-header .main-navigation li a:after{
+    content: none;
+}
+header.site-header .menu-text-wrapp {
+    color: #fff;
+    width: 25%;
+}
+header.site-header .menu-text-wrapp h3 {
+    font-size: 32px;
+    margin: 0;
+}
+header.site-header .inner-iemnu-wrapp.cww-flex {
+    justify-content: center;
+}
+header.site-header .main-navigation {
+    width: 50%;
+}
+header.site-header .social-icon-wrapp a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 24px;
+}
+header.site-header .social-icon-wrapp a:first-child{
+    padding-left: 0;
+}
+header.site-header .header-cta-wrapp a{
+    display: inline-block;
+    margin-top: 15px;
+}
+.cww-main-nav ul li{
+    display: block;
+}
+body.home.page-template header.site-header {
+    box-shadow: none;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}

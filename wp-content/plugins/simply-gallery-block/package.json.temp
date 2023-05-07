@@ -1,0 +1,55 @@
+{
+  "name": "sgb-skins",
+  "version": "3.0.3",
+  "description": "SGB Skins",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=default NODE_ENV=production webpack",
+    "dev": "cross-env BABEL_ENV=default NODE_ENV=development webpack --watch",
+    "lint": "eslint src/*.js"
+  },
+  "author": "GalleryCreator",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitasr/sgb-skins.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.6.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.3.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-prettier": "^1.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@vitasr/easing": "file:../Git/components/easing",
+    "@vitasr/fullscreen-modal-wrap": "file:../Git/components/fullScreenModalWrap",
+    "@vitasr/item-menu": "file:../Git/components/itemMenu",
+    "@vitasr/items-scrollbar-pagination": "file:../Git/components/itemsScrollBarPagination",
+    "@vitasr/lightbox-b": "file:../Git/components/lightboxB",
+    "@vitasr/lightbox-d": "file:../Git/components/lightboxD",
+    "@vitasr/modal-page": "file:../Git/components/modalPage",
+    "@vitasr/modal-window": "file:../Git/components/modalWindow",
+    "@vitasr/scroller-horizon": "file:../Git/components/scrollerhorizon",
+    "@vitasr/share-modal-window": "file:../Git/components/shareModalWindow",
+    "@vitasr/tags-list": "file:../Git/components/tagsList",
+    "@vitasr/thumb-fill-mode": "file:../Git/components/thumbFillMode",
+    "@vitasr/thumb-original-proportsions": "file:../Git/components/thumbOriginalProportions",
+    "@vitasr/utils": "file:../Git/components/utils"
+  }
+}
